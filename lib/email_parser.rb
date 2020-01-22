@@ -5,9 +5,10 @@
 #
 
 class EmailAddressParser
+  
   def parse(unformatted_string)
   end
-  
+
 end
 
 
