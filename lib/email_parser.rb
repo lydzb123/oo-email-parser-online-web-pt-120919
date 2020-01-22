@@ -5,8 +5,6 @@
 #
 
 
-
-
 class EmailAddressParser
   attr_accessor :emails #instance variable, every instance of an EmailAddressParser will be assigned an email_address
 
