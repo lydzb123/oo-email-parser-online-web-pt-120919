@@ -13,8 +13,8 @@ end
 
   def parse(unformatted_string)
 
-    split_emails = unformatted_string.split.collect do |each|
-      each.split(',')
+    split_emails = unformatted_string.split.collect do |x|
+      x.split(',')
     end
     split_emails.flatten.uniq
   end
