@@ -7,7 +7,9 @@
 class EmailAddressParser
 
 attr_accessor :emails
+
   def parse(unformatted_string)
+    @emails = unformatted_string.uniq.split(',')
   end
 
 end
