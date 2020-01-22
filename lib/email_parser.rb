@@ -10,7 +10,7 @@ attr_accessor :emails
   def parse(unformatted_string)
 
     @emails = unformatted_string.collect do |each|
-      each.sp;it(',') end
+      each.split(',') end
     @emails
 
 end
