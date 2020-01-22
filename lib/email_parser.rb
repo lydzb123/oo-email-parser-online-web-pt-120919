@@ -8,9 +8,9 @@ class EmailAddressParser
 attr_accessor :emails
 
   def parse(unformatted_string)
+
     @emails = unformatted_string.collect do |each|
-      each.spit(',')
-    end
+      each.spit(',') end
     @emails
 
 end
