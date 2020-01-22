@@ -5,7 +5,7 @@
 #
 
 class EmailAddressParser
-
+require 'pry'
 attr_accessor :emails
 
   def parse(unformatted_string)
