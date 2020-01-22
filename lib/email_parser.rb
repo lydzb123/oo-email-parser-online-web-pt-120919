@@ -4,39 +4,20 @@
 # or whitespace (' ').
 #
 
+
+
+
 class EmailAddressParser
-attr_accessor :emails
+  attr_accessor :emails #instance variable, every instance of an EmailAddressParser will be assigned an email_address
 
-def initialize(emails)
-  @emails = emails
-end
-
-  def parse(unformatted_string)
-
-    split_emails = unformatted_string.split.collect do |x|
-      x.split(',')
-    end
-    emails = split_emails.flatten.uniq
-    emails
+  def initialize(emails)
+    @emails = emails
   end
 
-end
-
-
-
-
-# class EmailAddressParser
-#   attr_accessor :emails #instance variable, every instance of an EmailAddressParser will be assigned an email_address
-#
-#   def initialize(emails)
-#     @emails = emails
-#   end
-#
-#   def parse
-#     split_emails = emails.split.collect do |address|
-#       address.split(',')
-#     end
-#     unique_split_emails = split_emails.flatten.uniq
-#     unique_split_emails
-#   end
-#
+  def parse
+    split_emails = emails.split.collect do |address|
+      address.split(',')
+    end
+    unique_split_emails = split_emails.flatten.uniq
+    unique_split_emails
+  end
