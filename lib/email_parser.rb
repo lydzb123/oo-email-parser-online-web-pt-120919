@@ -15,7 +15,6 @@ attr_accessor :emails
 
 
   end
-  binding.pry
 
 end
 
