@@ -13,9 +13,6 @@ attr_accessor :emails
       each.spit(',')
     end
 
-
-
-
 end
 
 
