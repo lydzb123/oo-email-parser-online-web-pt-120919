@@ -9,11 +9,11 @@ require 'pry'
 attr_accessor :emails
 
   def parse(unformatted_string)
-    binding.pry
 
     @emails = unformatted_string.split(',')
     @emails.flatten.uniq
   end
+  binding.pry
 
 end
 
