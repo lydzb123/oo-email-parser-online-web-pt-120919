@@ -12,6 +12,7 @@ attr_accessor :emails
     @emails = unformatted_string.collect do |each|
       each.spit(',')
     end
+    @emails
 
 end
 
