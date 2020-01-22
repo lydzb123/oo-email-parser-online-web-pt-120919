@@ -19,3 +19,4 @@ class EmailAddressParser
     unique_split_emails = split_emails.flatten.uniq
     unique_split_emails
   end
+end
