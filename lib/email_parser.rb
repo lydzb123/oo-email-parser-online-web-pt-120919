@@ -10,6 +10,7 @@ attr_accessor :emails
 
   def parse(unformatted_string)
     @emails = unformatted_string.split(',')
+    binding.pry
     @emails.flatten.uniq
   end
 
