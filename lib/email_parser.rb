@@ -16,8 +16,7 @@ end
     split_emails = unformatted_string.split.collect do |each|
       each.split(',')
     end
-
-    split_emails
+    split_emails.flatten.uniq
   end
 
 end
