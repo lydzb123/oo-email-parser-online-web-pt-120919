@@ -7,6 +7,10 @@
 class EmailAddressParser
 attr_accessor :emails
 
+def initialize(emails)
+  @emails = emails
+end
+
   def parse(unformatted_string)
 
     @emails = unformatted_string.collect do |each|
