@@ -9,9 +9,9 @@ require 'pry'
 attr_accessor :emails
 
   def parse(unformatted_string)
+    unformatted_string.collect do |each|
+      each.spit(',')
 
-    @emails = unformatted_string.split(',')
-    @emails.flatten.uniq
   end
   binding.pry
 
